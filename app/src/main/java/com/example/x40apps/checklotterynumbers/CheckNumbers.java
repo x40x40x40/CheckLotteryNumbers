@@ -9,6 +9,7 @@ public class CheckNumbers {
         int flag = 0;
         for (int i = 0; i < 5; i++)
             if (n1==n1) flag++;
+
         System.out.println(flag+n1);
         return flag+n1;
     }
