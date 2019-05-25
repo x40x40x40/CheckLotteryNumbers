@@ -151,14 +151,18 @@ public class MainActivityCLN extends AppCompatActivity {
                     if (!checkMegaOnly.isChecked())
                         if (flag>minimumMatched) {
                             allSelectedMatchedCount++;
-                            flagString[i] = String.valueOf(date[i]) + " test " + String.valueOf(flag) + " megaflag " + String.valueOf(megaFlag);
+                            String tempStr ="didn't matched";
+                            if (megaFlag) tempStr="matched";
+                            flagString[i] = String.valueOf(date[i]) + " matched " + String.valueOf(flag) + "/5 times; megaflag " +tempStr;
                             //nbrMatch[i]=flag;
                         }
                     //Saving matched results with MegaNumber
                     if (checkMegaOnly.isChecked())
                         if ((flag>minimumMatched) && (megaFlag)) {
                             allSelectedMatchedCount++;
-                            flagString[i] = String.valueOf(date[i]) + " test " + String.valueOf(flag) + " megaflag " + String.valueOf(megaFlag);
+                            String tempStr ="didn't matched";
+                            if (megaFlag) tempStr="matched";
+                            flagString[i] = String.valueOf(date[i]) + " matched " + String.valueOf(flag) + "/5 times; megaflag " + tempStr;
                             //nbrMatch[i]=flag;
                         }
                         //txtV.setText();
